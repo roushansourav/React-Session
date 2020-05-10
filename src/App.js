@@ -5,6 +5,7 @@ import Todo from './todo/home';
 import TodoLayman from './todolayman';
 import KeySession from './keySession';
 import LifeCycle from './lifeCycle';
+import Home from './Home';
 // Styled components
 import styled from 'styled-components'
 import { engrave } from './styles'
@@ -31,13 +32,15 @@ function App() {
     <div className="App">
       <Router>
         <Nav>
+          <StyledLink to='/' style={{margin:'0px 0.5rem',padding:'0.35rem 1rem'}}>Home</StyledLink>
           <StyledLink to='/lifecycle' style={{margin:'0px 0.5rem',padding:'0.35rem 1rem'}}>LifeCycle</StyledLink>
           <StyledLink to='/keysession' style={{margin:'0px 0.5rem',padding:'0.35rem 1rem'}}>Key Session</StyledLink>
           <StyledLink to='/todo' style={{margin:'0px 0.5rem',padding:'0.35rem 1rem'}}>Todo</StyledLink>
           <StyledLink to='/todolayman' style={{margin:'0px 0.5rem',padding:'0.35rem 1rem'}}>Todo Layman</StyledLink>
         </Nav>        
         <Switch>
-          <Route exact path='/todo'><Todo/></Route>
+          <Route exact path='/'><Home/></Route>
+          <Route path='/todo'><Todo/></Route>
           <Route path='/todolayman'><TodoLayman/></Route>
           <Route path='/keysession'><KeySession/></Route>
           <Route path='/lifecycle'><LifeCycle/></Route>

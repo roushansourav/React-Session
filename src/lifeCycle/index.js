@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { Div, H2, Button } from './../styles' 
 class LifeCycle extends React.Component{
 
