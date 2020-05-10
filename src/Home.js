@@ -1,5 +1,5 @@
 import React from 'react';
-import { Div, H2, Button } from './styles' 
+import { Div, H2} from './styles' 
 
 //JSX transpiled by Babel
 const element = React.createElement(
@@ -7,8 +7,8 @@ const element = React.createElement(
     {className: 'greeting'},
     'Hello, world!'
   );
-  
-class LifeCycle extends React.Component{
+
+class Home extends React.Component{
 
     constructor(props){
         super(props);
@@ -88,4 +88,4 @@ class LifeCycle extends React.Component{
     }
 }
 
-export default LifeCycle;
+export default Home;

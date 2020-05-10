@@ -6,6 +6,7 @@ import TodoLayman from './todolayman';
 import KeySession from './keySession';
 import LifeCycle from './lifeCycle';
 import Home from './Home';
+import MemoryLeak from './memoryLeak';
 // Styled components
 import styled from 'styled-components'
 import { engrave } from './styles'
@@ -37,6 +38,7 @@ function App() {
           <StyledLink to='/keysession' style={{margin:'0px 0.5rem',padding:'0.35rem 1rem'}}>Key Session</StyledLink>
           <StyledLink to='/todo' style={{margin:'0px 0.5rem',padding:'0.35rem 1rem'}}>Todo</StyledLink>
           <StyledLink to='/todolayman' style={{margin:'0px 0.5rem',padding:'0.35rem 1rem'}}>Todo Layman</StyledLink>
+          <StyledLink to='/memoryleak' style={{margin:'0px 0.5rem',padding:'0.35rem 1rem'}}>Memory Leak</StyledLink>
         </Nav>        
         <Switch>
           <Route exact path='/'><Home/></Route>
@@ -44,6 +46,7 @@ function App() {
           <Route path='/todolayman'><TodoLayman/></Route>
           <Route path='/keysession'><KeySession/></Route>
           <Route path='/lifecycle'><LifeCycle/></Route>
+          <Route path='/memoryleak'><MemoryLeak/></Route>
         </Switch>
       </Router>
     </div>
