@@ -69,8 +69,9 @@ class Home extends React.Component{
                     <Div boxed={true} style={{ flex:1, flexBasis: 300, flexShrink: 300 }} border={true}>
                         <H2>Important Topics</H2>
                         <ul>
-                            <li>JSX(JavaScript XML)</li>
                             <li>Components</li>
+                            <li>JSX(JavaScript XML)</li>
+                            <li>Virtual DOM</li>
                             <li>State & Props</li>
                             <li>LifeCycle</li>
                             <li>Controlled & Uncontrolled Components</li>
