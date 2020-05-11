@@ -1,6 +1,8 @@
 import React from 'react';
 import { Div, H2} from './styles' 
 
+//JSX
+const element1=<h1> Hello JSX</h1>
 //JSX transpiled by Babel
 const element = React.createElement(
     'h1',
@@ -84,6 +86,7 @@ class Home extends React.Component{
         </Div>
         <Div style={{margin:'auto',width:'80%', marginBottom:'5rem', padding: 10 , display: 'flex',justifyContent: 'center' }} engrave={true}>
             {element}
+						{element1}
         </Div>
         </>
     }
